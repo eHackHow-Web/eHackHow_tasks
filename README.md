@@ -4,4 +4,4 @@
 
 Create a layout given below using html table
 
-![Task 1]("./img/layout1.jpg")
+![Task 1](img/layout1.jpg)
