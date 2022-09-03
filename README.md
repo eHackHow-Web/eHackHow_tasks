@@ -19,3 +19,7 @@ Design your resume using html and css
 ## Task 4
 
 Recreate your `second task` with the help of html and css
+
+## Task 5
+
+Create card design using html css
