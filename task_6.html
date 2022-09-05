@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 6</title>
+
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .container {
+        width: 100%;
+        height: 100vh;
+        background: #2f334b;
+        position: relative;
+      }
+
+      .card {
+        width: 30rem;
+        height: 35rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: #51b192;
+        border-radius: 2rem;
+        cursor: pointer;
+        overflow: hidden;
+      }
+
+      .card_img {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+        background: url(./img/task_5/main_img.jpg) no-repeat center center;
+        background-size: cover;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 5px solid #282a36;
+      }
+
+      .card::before,
+      .card::after {
+        content: "";
+        position: absolute;
+        background: #ff5152;
+        width: 20rem;
+        height: 20rem;
+        z-index: 1;
+        border-radius: 50%;
+      }
+
+      .card::before {
+        right: -10rem;
+        top: -10rem;
+      }
+
+      .card::after {
+        bottom: -10rem;
+        left: -10rem;
+      }
+
+      .card_img::before,
+      .card_img::after {
+        content: "";
+        position: absolute;
+        background: #ffaead;
+        width: 5rem;
+        height: 5rem;
+        z-index: 1;
+        border-radius: 50%;
+      }
+
+      .card_img::before {
+        top: -1rem;
+        left: -1rem;
+      }
+
+      .card_img::after {
+        bottom: -2rem;
+        right: -2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card_img"></div>
+      </div>
+    </div>
+  </body>
+</html>
