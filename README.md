@@ -23,3 +23,9 @@ Task 2
 > Create card design using html css
 
 ![Task 5](./img/task_5/task_5.jpg)
+
+## Task 6
+
+> Create card and add circle on it
+
+![Task 6](./img/task_6/Task_6.jpg)
