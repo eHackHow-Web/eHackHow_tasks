@@ -17,3 +17,9 @@ Task 2 Reference
 Task 2
 
 ![Task 2](./img/task_2/task_2.jpg)
+
+## Task 5
+
+> Create card design using html css
+
+![Task 5](./img/task_5/task_5.jpg)
