@@ -23,3 +23,7 @@ Recreate your `second task` with the help of html and css
 ## Task 5
 
 Create card design using html css
+
+## Task 6
+
+Create card and add circle on it
