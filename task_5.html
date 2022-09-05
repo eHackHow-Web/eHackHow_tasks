@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 5</title>
+
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .container {
+        width: 100%;
+        height: 100vh;
+        background: #2f334b;
+        position: relative;
+      }
+
+      .card {
+        width: 30rem;
+        height: 35rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: #51b192;
+        border-radius: 2rem;
+        cursor: pointer;
+      }
+
+      .card_img {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 50%;
+        overflow: hidden;
+        background: url(./img/task_5/main_img.jpg) no-repeat center center;
+        background-size: cover;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 5px solid #282a36;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card_img"></div>
+      </div>
+    </div>
+  </body>
+</html>
