@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        position: relative;
+        height: 100vh;
+        }
+        .container{
+            height: 38rem;
+            width: 78rem;
+            background-color: blue;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .box1{
+            height: 27rem;
+            width: 27rem;
+            background-color: black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            overflow: hidden;
+        }
+        .main{
+            height: 15rem;
+            width: 15rem;
+            background-color: red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 10rem;
+        }
+        img{
+            height: 14rem;
+            border-radius: 10rem;
+        }
+        .circle1{
+            height: 8rem;
+            width: 8rem;
+            background-color: red;
+            position: absolute;
+            border-radius: 20rem; 
+            top: 70%;
+            transform: translate(-30%,30%);   
+        }
+        .circle2{
+            height: 8rem;
+            width: 8rem;
+            background-color: red;
+            position: absolute;
+            border-radius: 20rem; 
+            left: 70%;
+            transform: translate(30%,-30%);
+        }
+        .c1{
+            height: 4rem;
+            width: 4rem;
+            background-color: red;
+            border-radius: 2rem;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+        }
+        .c2{
+            height: 4rem;
+            width: 4rem;
+            background-color: red;
+            border-radius: 2rem;
+            position: absolute;
+            top: 75%;
+            left: 75%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <div class="main">
+                <img src="/img/p.jpg">
+            </div>
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="c1"></div>
+            <div class="c2"></div>
+        </div>
+        
+    </div>
+</body>
+</html>
