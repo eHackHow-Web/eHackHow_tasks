@@ -5,101 +5,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .b{
+            background-color: rgb(193, 216, 216);
+            width: 110rem;
+            height: 50rem;
+        }
+        .start{
+            width: 100rem;
+            background: #fff;
+            color: black;
+            font-size: 1.4rem;
+            font-family: sans-serif;  
+            margin: 5rem;             
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .navbar{
+            width: 100rem;
+        }
+        .container{
+            width: 100%;
+            max-width: 81rem;
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.4rem 1rem;   
+        }
+        .container .menu ul{
+            display: flex;
+            gap: 2rem;  
+        }
+        .head{
+            width: 100%;
+            display: flex;
+            gap:11rem;
+            justify-content: space-between;
+        }
+        .footer{
+            display: flex;
+            gap: 2rem;    
+        }
+        .x{
+            color: rgb(4, 0, 255) ;
+            
+        }
+        .y{
+            font-style: italic ;
+        }
+        .z{
+            color: blueviolet;
+        }
+    </style>
 </head>
-<style>
-    body{
-        position: relative;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .container{
-        height: 80rem;
-        width: 110rem;
-        background-color: rgb(109, 101, 101);
-        position: relative;
-    }
-    .container h1{
-        color: white;
-        font-family: Arial;
-        font-size: 6rem;
-        position: absolute;
-        top: 15rem;
-        line-height: 9rem;           
-    }
-    :is( .box1, .box2, .box3, .box4, .box5, .box6) {
-        height: 20rem;
-        width: 30rem;
-        background-color: white;
-        margin: 1rem;  
-
-    } 
-    img{
-        height: 20rem;
-        width: 20rem;
-    }
-    .main{
-        position: absolute;
-        left: 40%;
-        top: 7rem;
-    }
-    .box1 h1{
-        color: black;
-        font-size: 1rem;
-        transform: translate(5%,-600%);
-        line-height: 1rem;
-        
-    }
-    .inbox1{
-        height: 10rem;
-        width: 20rem;
-        background-color: aliceblue;
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        transform: translate(25%,-150%);
-        
-    }
-</style>
 <body>
-    <div>
-        <div class="container">           
-                <h1>Digital <br> Marketing <br> strategy <br> Template</h1>
-            <div class="main">   
-            <table>
-                <tr>
-                    <td>
-                        <div class="box1">
-                            <img src="/image/images.jpg">
-                            <div class="inbox1"> 
-                                <h1>Digital Marketing Strategy <br> PowerPoint Template</h1>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="box2"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="box3"></div>
-                    </td>
-                    <td>
-                        <div class="box4"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="box5"></div>
-                    </td>
-                    <td>
-                        <div class="box6"></div>
-                    </td>
-                </tr>
-            </table>
-            </div> 
+    <div class="b">
+    <div class="start">
+    <nav class="navbar">
+        <div class="container">
+            <div class="main">
+                <h1>Retjeh</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">AboutUs</a>
+                    </li>
+                    <li>
+                        <a href="#">Product</a>
+                    </li>
+                    <li>
+                        <a href="#">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="Register">
+                <h1>Register</h1>
+            </div>
         </div>
+    </nav>
+    <div class="head">
+        <div class="content">
+            <h1>Managing your sales <br> its never been this easy</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.  Saepe nisi praesentium aperiam vero vel laboriosam porro exercitationem recusandae, molestiae tenetur earum, architecto velit dolorem illum quos labore blanditiis magni reprehenderit.</p>
+            <input type="button" value="Download App">
+            <input type="button" value="Learn more">
+            <br> <br>
+           <p> Lorem ipsum dolor sit amet.</p>
+           <div class="footer">
+            <h1 class="x" >ATLASSIAN</h1>
+            <h1>asana</h1>
+            <h1 class="y" >shopify</h1>
+            <h1 class="z">stripe</h1>
+           </div>
+        </div>
+        <div class="image"><img src="/img/img3.png" alt=""></div>
+    </div>
+    </div>
     </div>
 </body>
 </html>

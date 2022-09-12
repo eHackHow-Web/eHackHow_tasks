@@ -1,0 +1,125 @@
+
+h1{
+    font-style: italic;
+}
+h2{
+   display: flex;
+    justify-content: center;
+}
+:hover{
+    cursor: pointer;
+}
+.container_1,
+.container_2{
+    
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10rem;
+    display: flex;
+}
+.container_3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container_1 .box_1,
+.container_2 .box_2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.container_1 .box_2,
+.container_2 .box_1,
+.container_3 .box_2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.container_1 .box_3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.container_2 .box_3{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+.container_3 .box_1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.amazon h2,
+.coffee h2{
+    width: 10rem;
+    box-shadow:  black;
+    border-radius: 12px ;
+    padding: 1rem;
+    background-color: whitesmoke;
+}
+.amazon h2:hover, 
+.coffee h2:hover{
+    width: 20rem;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+}
+.techcrunch h2{
+    width: 10rem;
+    border: solid;
+   padding: 1rem;
+
+}
+.techcrunch  h2:hover{
+    background-color: green;
+    border: none;
+    color: #fff;
+   
+}
+.producthunt h2{
+    width: 10rem;
+    padding: 1rem;
+}
+.producthunt h2:hover{
+    background-color: orangered;
+    color: #fff;
+}
+.india_hackers h2{
+    width: 10rem;
+   padding: 1rem;
+   background-color: blue;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+.india_hackers h2:hover{
+  
+   
+}
+.hey h2:hover{
+    background-color: blue;
+    border-radius: 2rem;
+    padding: 1rem;
+    color:#fff;
+}
+.slack h2{
+    width: 10rem;
+   padding: 1rem;
+
+}
+.slack h2:hover{
+    background-color: green;
+    color: #fff;
+}
+.remote h2{
+    width: 10rem;
+   padding: 1rem;
+   border: red solid;
+   border-radius: 1rem;
+}
+.remote h2:hover{
+    background-color: red;
+    color: #fff;
+}
