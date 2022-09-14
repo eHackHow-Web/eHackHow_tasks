@@ -1,0 +1,240 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    user-select: none;
+}
+
+.wrapper{
+    position: relative;
+    user-select: none;
+    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
+    word-wrap: wrap;
+    gap: 2rem;      
+}
+
+.container_1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+}
+
+.container_1 .amazon, .techcrunch, .producthunt{
+    font-style: italic;
+    font-weight: bold;
+    width: 20rem;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.section_1, .section_2, .section_3 {
+  line-height: 4rem;
+}
+
+.container_1 .section_1 .btn_section{
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.container_1 .section_2 .btn_section{
+    width: 20rem;
+    display: flex;
+    gap: 4rem;
+}
+
+.container_1 .section_3 .btn_section{
+    width: 20rem; 
+    display: flex;
+    justify-content: space-between;
+
+}
+/* .container_1 .section_1 .btn_section .btn_1, 
+.container_1 .section_1 .btn_section .btn_2,
+.container_1 .section_1 .btn_section .btn_3{
+    border-radius: 10px;
+    width: 5rem;
+} */
+:is(.container_1 .section_1 .btn_section)
+:where(.btn_1, .btn_2, .btn_3){
+    border-radius: 20px;
+    width: 6rem;
+    border: none;
+    height: 2rem;
+}
+
+:is(.container_1 .section_2 .btn_section)
+:where(.btn_1, .btn_2){
+    border: solid;
+    height: 3rem;
+    width: 6rem;
+}
+
+:is(.container_1 .section_3 .btn_section)
+:where(.btn_1, .btn_2, .btn_3){
+    width: 6rem;
+    height: 2rem;
+    border: none;
+}
+
+.container_1 .section_1 .btn_section :hover{
+    cursor: pointer;
+    width: 9rem;
+    background-color: yellow;
+}
+
+.container_1 .section_2 .btn_section :hover{
+    cursor: pointer;
+    background-color: green;
+    border: none;
+    color: white;
+}
+
+.container_1 .section_3 .btn_section :hover{
+    cursor: pointer;
+   background-color: orangered;
+   border: none;
+   color: white;  
+}
+
+.container_2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+}
+
+.container_2 .indie, .coffee ,.hey{
+    font-style: italic;
+    font-weight: bold;
+    width: 20rem;
+    font-size: 2rem;
+    padding: 1rem;
+}    
+
+.container_2 .hey{
+    text-transform: uppercase;
+}
+
+.container_2 .section_1 .btn_section{
+    width: 20rem;
+    display: flex;
+    gap: 4rem;
+}
+
+.container_2 .section_2 .btn_section{
+    width: 20rem; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_2 .section_3 .btn_section{
+    width: 20rem; 
+    display: flex;
+    justify-content: space-between;
+}
+
+:is(.container_2 .section_1 .btn_section)
+:where(.btn_1, .btn_2, .btn_3){
+    width: 7rem;
+    border: none;
+    height: 3rem;
+    background-color: #f52a53;
+}
+
+:is(.container_2 .section_2 .btn_section)
+:where(.btn_1, .btn_2, .btn_3){
+    border-radius: 20px;
+    width: 6rem;
+    height: 2rem;
+    border: none; 
+}
+
+:is(.container_2 .section_3 .btn_section)
+:where(.btn_1){
+    height: 2rem;
+    width: 8rem;
+    border-radius: 20px;
+    border: none;
+}
+
+.container_2 .section_1 .btn_section :hover{
+   
+}
+
+.container_2 .section_2 .btn_section :hover{
+    cursor: pointer;
+    width: 10rem;
+    background-color: yellow;
+}
+
+.container_2 .section_3 .btn_section :hover{
+    color: white;
+    background-color: blue;
+}
+
+.container_3{
+    width: 100%;
+    display: flex;
+    gap: 8rem;
+    position: absolute;
+    left: 4rem;
+    padding: 3rem;
+}
+
+.container_3 .slack, .remote{
+    font-style: italic;
+    font-weight: bold;
+    width: 20rem;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.container_3 .section_1 .btn_section{
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.container_3 .section_2 .btn_section{
+    width: 20rem;
+    display: flex;
+    gap: 2rem;
+}
+
+:is(.container_3 .section_1 .btn_section)
+:where(.btn_1, .btn_2, .btn_3, .btn_4){
+    height: 2rem;
+    width: 4.6rem;
+}
+
+:is(.container_3 .section_2 .btn_section)
+:where(.btn_1, .btn_2){
+    height: 2rem;
+    width: 4.6rem;
+    border: solid orangered;
+    border-radius: 5px;
+}
+
+.container_3 .section_1 .btn_section :hover{
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+.container_3 .section_2 .btn_section :hover{
+    cursor: pointer;
+    background-color: orangered;
+    color: white;
+    border: none;
+}

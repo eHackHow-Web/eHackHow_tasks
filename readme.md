@@ -22,3 +22,7 @@
 
 ![task_6](img/task6.html.png)
 
+#task7
+
+![task_7](img/task7.html.png)
+
