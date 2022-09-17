@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(240, 248, 255);
+
+}
+.first {
+    margin: 10px;
+    padding:0px;
+    background-color:bisque;
+    height:150px;
+    width: 100%;
+    font-family: sans-serif;
+    text-align:center; 
+    align-items: center; 
+}
+.first h1 h5 {
+    text-align: center;
+    line-height: 100px;
+}
+
+.info {
+    margin:20px;
+    padding: 0px;
+    position:absolute ;
+    background-color:aquamarine;
+    width: 300px;
+    height:600px;
+}
+.info img {
+    border: 2px solid white;
+    border-radius: 50%;
+    text-align: center;
+}
+.content {
+    margin: 10;
+    padding: 0px;
+  text-align: center;
+  font-family: sans-serif;
+}
+.content p {
+    text-align: center-left;
+}
+
+
+
+

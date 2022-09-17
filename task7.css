@@ -1,0 +1,119 @@
+/* Font Family */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+/* global css */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    appearance: none;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+    user-select: none;
+}
+
+.main {
+    background-color:rgb(0, 0, 0);
+    width:100%;
+    min-height:100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 90rem;
+    min-height: 100vh;
+    display:grid;
+    margin: 0 auto;
+    background-color:rgb(211, 211, 211);
+    
+}
+
+.box_section {
+    display: grid;
+    grid-template-columns:repeat(3 1fr);
+    grid-template-rows: repeat(2 1fr);
+    grid-template-areas: "box-1 box-2 box-3"
+    "box-4 box-5 box-6";
+    margin: 50px;
+}
+
+.box_section .box {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.box:hover{
+    transform: translate(-10px);
+    cursor:pointer;
+    box-shadow:10px 10px 10px 10px rgba(128, 128, 128, 0.956);
+}
+
+.box_section .box .img {
+    margin: 20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid #6333b665;
+}
+
+.box_section .box p {
+    color: rgb(128, 128, 128);
+    line-height: 40px;
+    font-weight:600 ;
+    line-height: 40px;
+}
+
+.box_section .box span {
+    color: rgb(210, 94, 113);
+}
+
+.box_section .box i {
+    font-size: 1.5rem;
+    border: 2px solid rgba(128, 128, 128, 0.938);
+    border-radius: 50%;
+    padding:10px;
+    margin: 0.5px;
+}
+
+.box_section .box i:hover {
+    transform: scale(1.2);
+}
+
+.box_section .box .btn {
+    width:9rem;
+    font-size: 15px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 146, 250);
+    margin: 30px 30px;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 35px;
+}
+
+.box_section .box .footer {
+    display: grid;
+    grid-template-columns:repeat(3 80px);
+    grid-template-rows: repeat(3 80px);
+    grid-template-areas: "text-1 text-2 text-3"
+    "text-4 text-5 text-6" "text-7 text-8 text-9";
+    font-weight: 600;
+    color: rgb(128, 128, 128);
+    line-height:25px;
+}
+
+.box_section .box .footer .digit {
+    line-height: 60px;
+    font-size:1.3rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
