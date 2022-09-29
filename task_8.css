@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.header {
+  min-height: 100vh;
+}
+
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background: #262a28;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 81rem;
+  margin: 0 auto;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar .container {
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar .container h1 {
+  font-size: 2rem;
+}
+
+.section .container {
+  padding: 1rem;
+}
+
+.section .container {
+  text-align: center;
+}
+
+.section .container .cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem 2rem;
+}
+
+.section .container .cards .card {
+  display: flex;
+  flex-flow: column;
+  gap: 1.5rem;
+  background: red;
+  padding: 2rem;
+  box-shadow: 0 0 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+.cards .card .card_head {
+  text-align: center;
+}
+
+.cards .card .card_head h1 {
+  font-size: 1.8rem;
+}
+
+.cards .card .card_head h2 {
+  font-size: 1rem;
+}
+
+.cards .card .card_main .info {
+  text-align: center;
+  font-weight: 600;
+}
+
+.cards .social {
+  margin: 0 auto;
+  width: 80%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.cards .social li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.cards .social li a {
+  color: #fff;
+}
+
+.section .container .cards .card:hover {
+  cursor: pointer;
+}
+
+.section .container .cards .card:nth-child(1):hover {
+  background: purple;
+}
+
+.section .container .cards .card:nth-child(2):hover {
+  background: green;
+}
+
+.section .container .cards .card:nth-child(3):hover {
+  background: yellow;
+}
+
+.section .container .cards .card:nth-child(4):hover {
+  background: blue;
+}
+
+.section .container .cards .card:nth-child(5):hover {
+  background: pink;
+}
+
+.section .container .cards .card:nth-child(6):hover {
+  background: orange;
+}
+
+.section .container .cards .card:nth-child(7):hover {
+  background: olive;
+}
+
+.section .container .cards .card:nth-child(8):hover {
+  background: paleturquoise;
+}
+
+@media screen and (max-width: 960px) {
+  .section .container .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section .container .cards {
+    grid-template-columns: 1fr;
+  }
+}

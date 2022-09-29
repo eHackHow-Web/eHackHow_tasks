@@ -27,3 +27,7 @@
 ## Task 7
 
 ![task_7](images/task_7.png)
+
+## Task 8
+
+![task_8](images/task_8.png)
