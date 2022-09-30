@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome CDN -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+    <style>
+      *,
+      *::after,
+      *::before{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      a {
+        text-decoration: none;
+      }
+      ul {
+        list-style: none;
+      }
+      body {
+        font-family: sans-serif;
+      }
+      .header {
+      min-height: 100vh;
+    }
+    .wrapper {
+        width: 100%;
+        min-height: 100vh;
+        background: black;
+        color: white;
+    
+    }
+    .container {
+       width: 100%;
+       max-width:81rem;
+       margin: 0 auto;
+    }
+    .navbar {
+        width: 100%;
+        padding: 1rem 1rem;
+        display: flex;
+        justify-content: center;
+        font-size:1.5rem;
+    }
+    .hero_section .container {
+        padding: 1rem;
+    }
+    .hero_section .container .cards{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(3 ,1fr);
+        padding: 1rem 2rem;
+    }
+    .hero_section .container .cards .card {
+        display: flex;
+        flex-flow: column;
+        gap: 1.5rem;
+        background: rgb(243, 11, 11);
+        padding: 2rem;
+        box-shadow: 0 0 1px 2px gray;
+    }
+    .cards .card .card_head {
+        text-align: center;
+    }
+    .cards .card .card_head h1 {
+        font-size: 1.7rem;
+    }
+    .cards .card .card_head h2 {
+        font-size: 1rem;
+    }
+    .cards .card .card_main .info{
+        text-align: center;
+        font-weight: 600;
+    }
+    .cards .social {
+        margin: 0 auto;
+        width: 80%;
+        display: grid;
+        gap: 0.8rem;
+        grid-template-columns: repeat(4 ,1fr);
+        /* display: inline-block; */
+    }
+    .cards .social li a {
+        color: white;
+    }
+    @media screen and (max-width: 750px) {
+        .hero_section .container .cards {
+            grid-template-columns: repeat(2,1fr);
+        }  
+    }
+    @media screen and (max-width: 450px) {
+        .hero_section .container .cards {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+</head>
+<body>
+    <script>
+    const pooja =[
+        {
+          title:"Aishwarya patil",
+          desc:"Programmer",
+          info:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias labore obcaecati sed eaque eius veniam cupiditate sequi excepturi libero reiciendis."
+        },
+        {
+          title:"Shraddha Patil",
+          desc:"Web Developer",
+          info:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias labore obcaecati sed eaque eius veniam cupiditate sequi excepturi libero reiciendis."
+        },
+        {
+          title:"Mithali Savane",
+          desc:"Director",
+          info:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias labore obcaecati sed eaque eius veniam cupiditate sequi excepturi libero reiciendis."
+        },
+        {
+          title:"Rakesh Nalavade",
+          desc:"Programmer",
+          info:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias labore obcaecati sed eaque eius veniam cupiditate sequi excepturi libero reiciendis."
+        },
+        {
+          title:"Sakshi Desai",
+          desc:"Web Desiner",
+          info:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias labore obcaecati sed eaque eius veniam cupiditate sequi excepturi libero reiciendis."
+        },
+        {
+          title:"Nitin Patil",
+          desc:"Founder",
+          info:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias labore obcaecati sed eaque eius veniam cupiditate sequi excepturi libero reiciendis."
+        }
+    ];
+    document.write( ` <div class="header">
+        <div class="wrapper">
+            <div class="navbar">
+            <div class="maintitle">
+                <div class="site_title">
+                    <h1>eHackHow</h1>
+                </div>
+            </div>
+        </div>
+        <div class="hero_section">
+            <div class="container">
+                <div class="cards">
+                    `);
+                    for(let i=0;i<pooja.length;i++) {
+                    document.write(`
+                    <div class="card">
+                        <div class="card_head">
+                            <h1 class="title">${pooja[i].title}</h1>
+                            <h2 class="desc">${pooja[i].desc}</h2>
+                        </div>
+                        <div class="card_main">
+                        <p class="info">${pooja[i].info}</p>
+                    </div>
+                        <div class="card_footer">
+                            <ul class="social">
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-skype"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    `);}
+                    documet.write(`
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    `);  
+    </script>
+     
+</body>
+</html>

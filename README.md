@@ -33,3 +33,7 @@ my resume
 ## task 7
 
 ![task7](img/layout7.png)
+
+## task 8
+
+![task8](img/layout8.png)
