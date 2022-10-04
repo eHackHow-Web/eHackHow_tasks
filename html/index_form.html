@@ -1,0 +1,102 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html form</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>This is form</legend>
+      <form action="" autocomplete="on">
+        <input type="text" value="Hello This is a form" readonly />
+        <br />
+        <br />
+
+        <label for="fname">First name</label>
+        <input type="text" name="firstname" placeholder="First name" />
+        <br />
+        <br />
+        <label for="lname">Last name</label>
+        <input type="text" name="lastname" placeholder="Last name" />
+        <br />
+        <br />
+        <label for="gender">Gender : </label>
+
+        <label for="male">Male</label>
+        <input type="radio" name="Gender" id="male" />
+        <label for="male">Female</label>
+
+        <input type="radio" name="Gender" id="female" />
+        <label for="male">Other</label>
+        <input type="radio" name="Gender" id="other" />
+
+        <br />
+        <br />
+        <label for="email">Email : </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          required
+        />
+
+        <br />
+        <br />
+
+        <label for="checkbox">Choose your course : </label>
+        <input type="checkbox" name="BCA" value="BCA" id="bca" />BCA
+        <input type="checkbox" name="BBA" value="BBA" id="bba" />BBA
+        <input type="checkbox" name="MCA" value="MCA" id="mca" />MCA
+        <input type="checkbox" name="MBA" value="MBA" id="mba" />MBA
+
+        <label for="nuber">Select year</label>
+        <input type="number" name="number" id="" />
+        <br />
+        <br />
+        <label for="password">Password : </label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          required
+        />
+
+        <!--?  button -->
+        <!-- <input type="button" value="button" />
+      <input type="reset" value="reset" />
+      <input type="submit" value="submit" /> -->
+
+        <br />
+        <br />
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <br />
+        <br />
+
+        <input type="color" name="red" id="" />
+
+        <input type="date" name="date" id="" />
+
+        <input type="file" name="file" id="" />
+
+        <label for="range">Range</label>
+        <input type="range" name="range" id="" 50% />
+        <br />
+        <br />
+
+        <label for="course">Select Course</label>
+        <select name="course" id="course">
+          <option value="1" name="course">C</option>
+          <option value="2" name="course">C++</option>
+          <option value="2" name="course">Python</option>
+        </select>
+
+        <br />
+        &copy; &copysr; &emsp; &nbsp; &rArr;
+      </form>
+    </fieldset>
+  </body>
+</html>

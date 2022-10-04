@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 14</title>
+    <style>
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      .wrapper {
+        height: 100vh;
+      }
+      .container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #17646b;
+      }
+      .card {
+        display: flex;
+        flex-flow: column;
+        height: 70%;
+        width: 40%;
+        text-align: center;
+        padding: 1.5rem;
+        border-radius: 2rem;
+        align-items: center;
+        gap: 1rem;
+        background-color: #ff5a5b;
+        opacity: 0.9;
+      }
+      img {
+        height: 15rem;
+        width: 30rem;
+      }
+      #btn {
+        cursor: pointer;
+        width: 10rem;
+        padding: 0.7rem 0.2rem;
+        background: linear-gradient(#f00, #17646b);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="card">
+          <div class="img">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6fX-n7KT-3a05NChSDeN4QFsBPthcG1_EyL3ag0-66P6JtFtMzjHGEOYm5f3cn6as9-w&usqp=CAU"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div id="name"></div>
+          <div id="title"></div>
+          <div id="para"></div>
+          <div
+            id="btn"
+            onclick="call
+          ()"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let obj = [
+        {
+          name: "Name of Animal",
+          title: "Tiger",
+          para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatem facilis veritatis voluptatibus, neque eveniet!",
+          btn: "Click here to get more info",
+        },
+      ];
+
+      let a = document.getElementById("name");
+      a.innerHTML = obj[0].name;
+      let b = document.getElementById("title");
+      b.innerHTML = obj[0].title;
+      let c = document.getElementById("para");
+      c.innerHTML = obj[0].para;
+      let d = document.getElementById("btn");
+      d.innerHTML = obj[0].btn;
+
+      function call() {
+        window.open(
+          (location.href = "https://www.britannica.com/animal/tiger")
+        );
+      }
+    </script>
+  </body>
+</html>

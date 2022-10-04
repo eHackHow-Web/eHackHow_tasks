@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #000;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+      }
+      .container {
+        border: 3px solid #fff;
+        height: 30rem;
+        width: 30rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+      }
+      .img {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrTFrhr_-pYR74jUgOy7IerAoHAX3zPIZZcg&usqp=CAU);
+        background-size: cover;
+        border: 3px solid #f00;
+        background-repeat: no-repeat;
+        position: absolute;
+        height: 20rem;
+        width: 20rem;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .img .corner1 {
+        background-color: #f00;
+        height: 9rem;
+        width: 9rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translate(-90%, 90%);
+        border-radius: 50%;
+      }
+      .img .corner2 {
+        background-color: #f00;
+        height: 9rem;
+        width: 9rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(90%, -90%);
+        border-radius: 50%;
+      }
+      /* .main {
+      background-color: #f00; 
+        height: 20rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-49%);
+        border-radius: 50%;
+      } */
+      :is(.img .one, .img .two, .img .three, .img .four, .img .six, .img
+          .seven, .img .eight, .img .nine) {
+        border: 0.7rem solid #008800;
+        height: 2rem;
+        width: 2rem;
+        position: absolute;
+        border-radius: 50%;
+      }
+      .img .one {
+        top: 20%;
+        transform: translate(-250%, -330%);
+      }
+      .img .two {
+        top: 25%;
+        transform: translate(-250%, -320%);
+      }
+      .img .three {
+        top: 10%;
+        transform: translate(-250%, -350%);
+      }
+      .img .four {
+        top: 15%;
+        transform: translate(-250%, -340%);
+      }
+      .img .six {
+        bottom: 25%;
+        transform: translate(1131%, 498%);
+      }
+      .img .seven {
+        bottom: 10%;
+        transform: translate(1131%, 290%);
+      }
+      .img .eight {
+        bottom: 15%;
+        transform: translate(1131%, 280%);
+      }
+      .img .nine {
+        bottom: 20%;
+        transform: translate(1131%, 270%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img">
+        <div class="corner1"></div>
+        <div class="corner2"></div>
+        <div class="main">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+          <div class="four"></div>
+        </div>
+        <div class="main1">
+          <div class="six"></div>
+          <div class="seven"></div>
+          <div class="eight"></div>
+          <div class="nine"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html> 

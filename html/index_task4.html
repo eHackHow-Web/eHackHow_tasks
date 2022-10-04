@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      /* https://media.istockphoto.com/photos/working-through-some-details-picture-id539440276?k=20&m=539440276&s=612x612&w=0&h=_4qGPRTu7xE-P8uy2kmT0alzhinnrC8hsaVeHnQl9B0= */
+      :root {
+        --text-transform: uppercase;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+      }
+      .navbar .menu ul {
+        list-style: none;
+        display: flex;
+      }
+      .navbar .menu ul li {
+        padding: 1rem;
+        text-decoration: dotted;
+      }
+      .navbar .menu ul li a {
+        text-decoration: none;
+        padding: 0.7rem;
+      }
+      .navbar .menu ul li a:hover {
+        background-color: #1364c8;
+        color: #fff;
+      }
+      .img_container {
+        background-image: url(../images/istockphoto-690028746-612x612.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 30rem;
+        width: 100%;
+      }
+      .img_container {
+        padding: 5rem;
+      }
+      .img_container h1 {
+        width: 25rem;
+        /* padding: 8rem 0 0 8rem; */
+      }
+      .img_container p {
+        width: 50rem;
+        /* padding: 2rem 0 0 8rem; */
+        margin-bottom: 4rem;
+      }
+
+      .img_container a {
+        /* margin-top:20rem; */
+        /* margin: 4rem 0 0 5rem; */
+        padding: 1rem 1.5rem;
+        text-decoration: none;
+        background-color: #1364c8;
+        /* background:-moz-linear-gradient(#19559d,#226d22) */
+        color: #fff;
+        border-radius: 0.5rem;
+      }
+
+      .service {
+        text-align: center;
+      }
+      .service .ser_head p {
+        text-align: center;
+        font-size: small;
+        color: #1364c8;
+        margin-top: 2.5rem;
+        text-transform: var(--text-transform);
+      }
+      .service .icon {
+        padding: 2rem;
+      }
+      .service .icon ul {
+        justify-content: center;
+        margin: 0 16rem;
+        display: flex;
+        justify-items: center;
+        list-style: none;
+        width: 70rem;
+        margin-bottom: 2rem;
+      }
+      .service .icon ul li {
+        margin-top: 2rem;
+        border: 1px solid #000;
+        padding: 1rem;
+      }
+      .choose {
+        padding: 0 6rem;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #a8a6a6;
+      }
+      :is(.choose .info .row1 ul, .choose .info .row2 ul) {
+        align-self: center;
+        width: 60rem;
+        margin: 0 16.5rem;
+        display: flex;
+        list-style: none;
+        padding: 2rem;
+        gap: 3rem;
+      }
+
+      .choose .choose_head {
+        text-align: center;
+        margin: 3rem;
+        padding: 3rem 0 0 0;
+      }
+      .info .row1 {
+        align-items: center;
+        text-align: center;
+        align-self: center;
+      }
+      .serv a {
+        padding: 1rem 1.5rem;
+        text-decoration: none;
+        background-color: #1364c8;
+        color: #fff;
+        border-radius: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <h1>PathSoft</h1>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="img_container">
+        <h1>IT Solutions for Your Business</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+          expedita dignissimos voluptas quibusdam reiciendis praesentium sunt
+          nobis omnis rerum ullam.
+        </p>
+        <a href="#">Learn More &rarr;</a>
+        <a href="#">Get in Touch &rarr;</a>
+        <div class="header_img"></div>
+      </div>
+    </div>
+
+    <div class="service">
+      <div class="ser_head">
+        <p>area what we serv</p>
+        <h1>Our Services</h1>
+      </div>
+      <div class="icon">
+        <ul>
+          <li>
+            <i class="fa fa-gear"></i>
+            <h1>Corporate Solution</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              odit iusto quia possimus tempore, odio animi laboriosam suscipit
+              dicta, nam, perferendis minima. Soluta numquam, minima fugit
+              voluptatibus aspernatur sunt quia.
+            </p>
+          </li>
+
+          <li>
+            <i class="fa fa-solid fa-phone"></i>
+            <h1>Call Center Solutions</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              odit iusto quia possimus tempore, odio animi laboriosam suscipit
+              dicta, nam, perferendis minima. Soluta numquam, minima fugit
+              voluptatibus aspernatur sunt quia.
+            </p>
+          </li>
+
+          <li>
+            <i class="fa fa-cloud-download"></i>
+            <h1>Cloud Development</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              odit iusto quia possimus tempore, odio animi laboriosam suscipit
+              dicta, nam, perferendis minima. Soluta numquam, minima fugit
+              voluptatibus aspernatur sunt quia.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="serv">
+        <a href="#">See All Serv &rarr;</a>
+      </div>
+    </div>
+    <div class="choose">
+      <div class="choose_head">
+        <h1>Why Choose Us</h1>
+        <p>some reasons</p>
+      </div>
+      <div class="info">
+        <div class="row1">
+          <ul>
+            <li>
+              <h2>Dedicated 24\7 Support</h2>
+              <p>
+                &HorizontalLine; Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Et perferendis minus corrupti explicabo.
+                Necessitatibus, laudantium!
+              </p>
+            </li>
+
+            <li>
+              <h2>30-Day Money-back Guarantee</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et
+                perferendis minus corrupti explicabo. Necessitatibus,
+                laudantium!
+              </p>
+            </li>
+            <li>
+              <h2>Agile and Fast Working style</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et
+                perferendis minus corrupti explicabo. Necessitatibus,
+                laudantium!
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="row2">
+          <ul>
+            <li>
+              <h2>Some Apps are Free</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et
+                perferendis minus corrupti explicabo. Necessitatibus,
+                laudantium!
+              </p>
+            </li>
+            <li>
+              <h2>High Level of Usability</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et
+                perferendis minus corrupti explicabo. Necessitatibus,
+                laudantium!
+              </p>
+            </li>
+            <li>
+              <h2>Dedicated 24\7 Support</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et
+                perferendis minus corrupti explicabo. Necessitatibus,
+                laudantium!
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

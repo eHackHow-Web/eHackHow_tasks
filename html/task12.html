@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      .wrapper {
+        height: 100vh;
+        background: linear-gradient(#282a36, #004434, #00c497);
+      }
+      .main {
+        /* padding: 10%; */
+        height: 40rem;
+        display: flex;
+        /* flex-flow: column; */
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+      }
+      button {
+        border: none;
+        background: linear-gradient(#282a36, #004434, #00c497);
+        box-shadow: 0px 3px 5px 6px #00c497;
+        padding: 1.5rem 4rem;
+        transition: all 0.5s linear infinite;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        color: #fff;
+      }
+
+      #ascii:hover,
+      #char:hover,
+      #tbl:hover,
+      #close:hover {
+        transform: scale(1.1);
+      }
+      #tbl {
+        justify-content: center;
+      }
+      /* .container {
+        background-color: #ff5a5b;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="main">
+          <button name="ascii" id="ascii" onclick="ascii()">
+            Ascii to character converter
+          </button>
+
+          <button name="char" id="char" onclick="char()">
+            Character to Ascii converter
+          </button>
+          <button name="tbl" id="tbl" onclick="tbl()">
+            Click here to view Image
+          </button>
+          <!-- <button name="close" id="close" onclick="close()">x</button> -->
+        </div>
+      </div>
+    </div>
+    <script>
+      function ascii() {
+        let ascii = prompt("Enter your ascii number :");
+        b = String.fromCharCode(ascii);
+        alert(b);
+      }
+      function char() {
+        let char = prompt("Enter your character :").charCodeAt();
+        alert(char);
+      }
+      function tbl() {
+        document.write(`<div class="container">`);
+        document.write(`<div class="tbl">`);
+        document.write(`<table border="1">`);
+        document.write(`<tr>`);
+        for (let i = 0; i <= 19; i++) {
+          let a = String.fromCharCode(i);
+          document.write(`<td>`, a.toString(), `<\/td>`);
+        }
+        document.write(`</tr>`);
+
+        document.write("<br>");
+
+        document.write(`<tr>`);
+        for (let i = 20; i <= 39; i++) {
+          let a = String.fromCharCode(i);
+          document.write(`<td>`, a.toString(), `<\/td>`);
+        }
+        document.write(`</tr>`);
+
+        document.write("<br>");
+
+        document.write(`<tr>`);
+        for (let i = 40; i <= 59; i++) {
+          let a = String.fromCharCode(i);
+          document.write(`<td>`, a.toString(), `<\/td>`);
+        }
+        document.write("</tr>");
+
+        document.write("<br>");
+
+        document.write(`<tr>`);
+        for (let i = 60; i <= 79; i++) {
+          let a = String.fromCharCode(i);
+          document.write(`<td>`, a.toString(), `<\/td>`);
+        }
+        document.write("</tr>");
+        document.write("<br>");
+
+        document.write(`<tr>`);
+        for (let i = 80; i <= 99; i++) {
+          let a = String.fromCharCode(i);
+          document.write(`<td>`, a.toString(), `<\/td>`);
+        }
+        document.write("</tr>");
+        document.write("<br>");
+
+        document.write(`<tr>`);
+        for (let i = 100; i <= 119; i++) {
+          let a = String.fromCharCode(i);
+          document.write(`<td>`, a.toString(), `<\/td>`);
+        }
+        document.write("</tr>");
+        document.write("<br>");
+
+        document.write(`<tr>`);
+        for (let i = 120; i <= 127; i++) {
+          let a = String.fromCharCode(i);
+          document.write(`<td>`, a.toString(), `<\/td>`);
+        }
+        document.write("</tr>");
+        document.write("<br>");
+        document.write(`</table>`);
+        document.write(`</div>`);
+        document.write(`</div>`);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task7</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .main_con {
+        background-color: aqua;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+      }
+      .main {
+        height: 20rem;
+        width: 20rem;
+        background-color: #7fff00;
+        top: 40%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        transition: all 2s ease-in-out;
+      }
+      :is(.one, .two, .three, .four, .five) {
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        background-color: #000;
+        position: absolute;
+        transition: all 2s ease-in-out;
+      }
+      .circle:hover {
+        transform: rotate(90deg);
+      }
+      .one {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .two {
+        top: 50%;
+        left: 50%;
+        transform: translate(80%, -50%);
+      }
+      .three {
+        top: 50%;
+        left: 50%;
+        transform: translate(210%, -50%);
+      }
+      .four {
+        top: 50%;
+        left: 50%;
+        transform: translate(-190%, -50%);
+      }
+      .five {
+        top: 50%;
+        left: 50%;
+        transform: translate(-320%, -50%);
+      }
+      .main:hover {
+        transform: rotate(45deg);
+        /* transform: ; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main_con">
+        <div class="main">
+          <div class="circle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
