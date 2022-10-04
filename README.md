@@ -18,7 +18,7 @@
 
 ## 6th task
 
-![Task 5](../task_images/../task/task_images/screencapture-127-0-0-1-50136-html-task6-html-2022-09-07-21_16_00.png)
+![Task 5](./task_images/screencapture-127-0-0-1-50136-html-task6-html-2022-09-07-21_16_00.png)
 
 ## 12th task
 
