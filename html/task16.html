@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task 15</title>
+    <style>
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        background: #ff5a5b;
+      }
+
+      img {
+        width: 23rem;
+        height: 13rem;
+        background-size: cover;
+        border-radius: 2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      button {
+        padding: 0.6rem 1rem;
+        width: 35%;
+        background-color: rgb(5, 5, 5);
+        border-radius: 2rem;
+        margin-top: 0.5rem;
+        border: none;
+        outline: none;
+      }
+
+      button:hover a {
+        color: #fff;
+      }
+
+      a {
+        text-decoration: none;
+        color: #ff494b;
+        font-size: 0.9rem;
+      }
+      .wrapper {
+        height: 100vh;
+        width: 100%;
+      }
+      .container {
+        width: 100%;
+        max-width: 95%;
+        margin: auto;
+      }
+      .card_div {
+        padding: 1.8rem 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        text-align: center;
+        gap: 1rem 3rem;
+      }
+      .card {
+        display: flex;
+        flex-flow: column;
+        padding: 0.7rem;
+        background: #ff494b;
+        border-radius: 2.5rem;
+        align-items: center;
+      }
+
+      @media (max-width: 1520px) {
+        .card_div {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .card {
+          padding: 2rem;
+          background: #ff494b;
+        }
+      }
+      @media (max-width: 1072px) {
+        .container {
+          width: 100%;
+          min-width: 1520px;
+        }
+
+        .card_div {
+          grid-template-columns: 1fr;
+          gap: 4rem 3rem;
+        }
+      }
+      @media (max-width: 1024px) {
+        .container {
+          width: 100%;
+          min-width: 1024px;
+        }
+
+        .card_div {
+          grid-template-columns: 1fr;
+          gap: 4rem 3rem;
+          padding: 4rem 10rem;
+        }
+      }
+      @media (max-width: 790px) {
+        .container {
+          width: 100%;
+          min-width: 790px;
+        }
+
+        .card_div {
+          padding: 6rem 4rem;
+        }
+
+        .card {
+          padding: 3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="card_div"></div>
+      </div>
+    </div>
+
+    <script>
+      let obj = [
+        {
+          img1: "https://cdn.britannica.com/29/150929-050-547070A1/lion-Kenya-Masai-Mara-National-Reserve.jpg",
+          h2: "Loin",
+          desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, ipsam!",
+          btn: "<a href='https://en.wikipedia.org/wiki/Lion'>Read More</a>",
+          btn: "https://en.wikipedia.org/wiki/Lion",
+        },
+        {
+          img1: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe9XfFoyvO3CF1WQTHPue7MJuOM9--EZn30w&usqp=CAU",
+          h2: "Tiger",
+          desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, ipsam!",
+          btn: "https://en.wikipedia.org/wiki/Tiger",
+        },
+        {
+          img1: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLdls-mU0gKRuIC3S3tVwerRTtUHPLD7JxdA&usqp=CAU",
+          h2: "Cat",
+          desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, ipsam!",
+          btn: "https://en.wikipedia.org/wiki/Cat",
+        },
+        {
+          img1: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk28PLiudii1eXzPzlj_wD_aDBB28J2K8LWZecKdw7nBBlnIiKbNA4-EC0Y0teSnx9p3w&usqp=CAU",
+          h2: "Dog",
+          desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, ipsam!",
+          btn: "https://en.wikipedia.org/wiki/Dog",
+        },
+        {
+          img1: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2013/12/19/11/elephants2.jpg?quality=75&width=1200&auto=webp",
+          h2: "Elephant",
+          desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, ipsam!",
+          btn: "https://en.wikipedia.org/wiki/Elephant",
+        },
+        {
+          img1: "https://i.natgeofe.com/n/fdf37c87-1fc5-4b90-9256-712d08558537/4263363_16x9.jpg",
+          h2: "Deer",
+          desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, ipsam!",
+          btn: "https://en.wikipedia.org/wiki/Deer",
+        },
+      ];
+
+      for (const i in obj) {
+        let main = document.querySelector(".card_div");
+        let card = `<div class="card">
+          <img src = ${obj[i].img1}
+          <h2>${obj[i].h2}</h2>
+          <p>${obj[i].desc}</p>
+          <button><a href= "${obj[i].btn}">Read More</a></button>
+          </div>
+        `;
+        main.insertAdjacentHTML("afterbegin", card);
+      }
+    </script>
+  </body>
+</html>
