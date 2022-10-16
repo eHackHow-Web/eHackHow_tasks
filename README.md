@@ -27,3 +27,11 @@
 ## 14th task
 
 ![Task 14](./task_images/screencapture-127-0-0-1-60253-html-task14-html-2022-10-04-20_34_11.png)
+
+## 15th task
+
+![Task 15](./task_images/screencapture-127-0-0-1-54554-temp-task15-html-2022-10-16-15_47_07.png)
+
+## 16th task
+
+![Task 16](./task_images/screencapture-127-0-0-1-54554-temp-task16-html-2022-10-16-15_27_05.png)
