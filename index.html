@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>document</title>
+</head>
+<style>
+  *,
+  *::after,
+  *::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgb(0,0,77),darkcyan);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .list{
+    color: white;
+    font-size: 3 rem;
+  }
+ .btn{
+   position: absolute;
+   top: 60%;
+   left:40%;
+   padding: 0.5rem;
+   background-color: darkgray;
+   color: orangered;
+ }
+</style>
+<body>
+ <div class="wraper">
+   <div class="container">
+    <ul class="list">
+      <li>item_1</li>
+      <li>item_2</li>
+      <li>item_3</li>
+      <li>item_4</li>
+      <li>item_5</li>
+    </ul>
+    <button class="btn" onclick="addition()">add tag</button>
+    
+   </div>
+ </div>
+ <script>
+   let store=document.querySelector(".list");
+   let remove=prompt("enter index number");
+   let abc=store.children[remove];
+   store.removeChild(abc);
+   
+   function addition(){
+   let store=document.querySelector(".list")
+   let add=document.createElement("li");
+   let text=document.createTextNode("hello world.!");
+     add.appendChild(text);
+     store.appendChild(add);
+   }
+  
+ </script>
+</body>
+</html>
