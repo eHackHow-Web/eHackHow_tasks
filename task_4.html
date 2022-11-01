@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    .container {
+      width: 80%;
+      max-width: 81rem;
+      margin: 0 auto;
+      height: 70px;
+      position: relative;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      border-style: ridge;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+    }
+    .navbar {
+      padding-left: 4rem;
+      display: flex;
+      font-family: "Poppins", sans-serif;
+    }
+    .logo {
+      display: flex;
+    }
+    .menu {
+      display: flex;
+      position: absolute;
+      list-style: none;
+      gap: 2rem;
+      left: 35%;
+      top: 33%;
+    }
+
+    .png {
+      width: 50px;
+      height: 40px;
+      margin: 1.1rem;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: black;
+    }
+    .home {
+      font-weight: 600;
+    }
+    .join {
+      display: flex;
+      position: absolute;
+      left: 84%;
+      top: 15%;
+    }
+    .join a {
+      padding: 0.8rem;
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+      text-decoration: none;
+      background-color: #ffcf54;
+      border-radius: 25px;
+      color: black;
+      font-weight: 600;
+    }
+    .container_2 {
+      display: flex;
+      margin: 0 auto;
+      width: 80%;
+      height: 26.9rem;
+      position: relative;
+    }
+    .main_img {
+      display: flex;
+      position: absolute;
+      left: 40%;
+      top: 10%;
+    }
+    .girl {
+      width: 400px;
+    }
+    .init {
+      font-family: "Poppins", sans-serif;
+      font-weight: bold;
+      padding-left: 5rem;
+      padding-top: 3rem;
+    }
+    .table {
+      position: absolute;
+      width: 60px;
+      z-index: 3;
+    }
+    .study {
+      position: absolute;
+      left: 6%;
+    }
+    .study_girl {
+      width: 100px;
+    }
+    .study1 {
+      position: absolute;
+      left: 15%;
+    }
+    .study2 {
+      position: absolute;
+      left: 15%;
+      top: 55%;
+    }
+    .study3 {
+      height: 60px;
+      position: absolute;
+      left: 2%;
+      top: 73%;
+      padding-left: 3rem;
+      padding-right: 4rem;
+      border-radius: 25px;
+    }
+    .study3 h4 {
+      background-color: #ffcf54;
+      padding-right: 4rem;
+      padding-left: 4rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      border-radius: 25px;
+    }
+    .plant {
+      width: 50px;
+      position: absolute;
+      left: 80%;
+      top: 12%;
+    }
+    .table2 {
+      width: 60px;
+      position: absolute;
+      left: 80%;
+      top: 37%;
+    }
+    .book {
+      width: 80px;
+      position: absolute;
+      left: 78%;
+      top: 65%;
+    }
+    .set4 {
+      position: absolute;
+      left: 87%;
+      top: 6%;
+    }
+    .set5 {
+      position: absolute;
+      left: 87%;
+      top: 30%;
+    }
+    .set6 {
+      position: absolute;
+      left: 87%;
+      top: 56%;
+    }
+    .set7 {
+      position: absolute;
+      left: 87%;
+      top: 15%;
+    }
+    .set8 {
+      position: absolute;
+      left: 88%;
+      top: 40%;
+    }
+    .set9 {
+      position: absolute;
+      left: 86%;
+      top: 66%;
+    }
+    .set10 {
+      width: 9rem;
+      height: 8rem;
+      background-color: #ff4500;
+      border-radius: 10px;
+      position: absolute;
+      left: 83%;
+      top: 83%;
+      z-index: 10;
+      color: aliceblue;
+    }
+    .set10 h1 {
+      position: absolute;
+      bottom: 40%;
+      left: 11%;
+    }
+    .set10 h2 {
+      position: absolute;
+      top: 22%;
+      left: 4%;
+    }
+    .set10 .mon {
+      position: absolute;
+      bottom: 40%;
+      left: 45%;
+    }
+    .set10 .dollar {
+      position: absolute;
+      top: 50%;
+      left: 20%;
+    }
+    .container3 {
+      width: 80%;
+      max-width: 81rem;
+      height: 243px;
+      margin: 0 auto;
+      display: flex;
+      background-color: #1c0030;
+      background-image: url(voilet.jpg);
+      position: relative;
+    }
+    .foot1 {
+      color: aliceblue;
+      position: absolute;
+      left: 6%;
+      top: 15%;
+    }
+    .footer1 {
+      height: 120px;
+      width: 350px;
+      background-color: #d4eaea;
+      position: absolute;
+      left: 6%;
+      top: 45%;
+      border-radius: 7px;
+    }
+    .footer2 {
+      height: 120px;
+      width: 350px;
+      background-color: #eec7e9;
+      position: absolute;
+      left: 36%;
+      top: 45%;
+      border-radius: 7px;
+    }
+    .footer3 {
+      height: 120px;
+      width: 350px;
+      background-color: #f3dbc4;
+      position: absolute;
+      left: 66%;
+      top: 45%;
+      border-radius: 7px;
+    }
+    .space {
+      position: absolute;
+      left: 7%;
+      font-weight: bold;
+    }
+    .space2 {
+      position: absolute;
+      left: 7%;
+      top: 45%;
+    }
+    .chill {
+      position: absolute;
+      left: 7%;
+    }
+    .chill2 {
+      position: absolute;
+      left: 7%;
+      top: 45%;
+    }
+    .virt {
+      position: absolute;
+      left: 7%;
+    }
+    .virt2 {
+      position: absolute;
+      left: 7%;
+      top: 45%;
+    }
+    .space3 {
+      width: 90px;
+      position: absolute;
+      bottom: 30%;
+      left: 60%;
+    }
+    .chill3 {
+      width: 90px;
+      position: absolute;
+      bottom: 30%;
+      left: 60%;
+    }
+    .virt3 {
+      width: 90px;
+      position: absolute;
+      bottom: 20%;
+      top: 22%;
+      left: 60%;
+    }
+  </style>
+  <body>
+    <!--navbar start-->
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="task_4_img/rec.png" alt="main" class="png" />
+          <h1>COWORK</h1>
+        </div>
+        <div class="menu">
+          <li><a class="home" href="#">Home</a></li>
+          <li><a href="#">Space Order</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">About</a></li>
+        </div>
+        <div class="join">
+          <a href="#">Join now &rarr;</a>
+        </div>
+      </div>
+    </div>
+    <!--navbar close-->
+    <!--main container start-->
+    <div class="container_2">
+      <div class="main_sec">
+        <div class="main_img">
+          <img src="task_4_img/center.png" alt="girl" class="girl" />
+        </div>
+        <div class="init">
+          <img src="task_4_img/table.png" alt="table" class="table" />
+          <h1>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;find perfect <br />working
+            space <br />near you!
+          </h1>
+        </div>
+        <div class="study">
+          <img src="task_4_img/girlstudy.png" alt="stud" class="study_girl" />
+        </div>
+        <div class="study1"><h6>Sara Polvin</h6></div>
+        <div class="study2">
+          <h4>best way of finding <br />working spaces</h4>
+        </div>
+        <div class="study3"><h4>Pick your Disk</h4></div>
+        <div class="set1">
+          <img src="task_4_img/tree.png" alt="tree" class="plant" />
+        </div>
+        <div class="set2">
+          <img src="task_4_img/table.png" alt="table2" class="table2" />
+        </div>
+        <div class="set3">
+          <img src="task_4_img/books.png" alt="book" class="book" />
+        </div>
+        <div class="set4"><h1>40</h1></div>
+        <div class="set5"><h1>60</h1></div>
+        <div class="set6"><h1>300+</h1></div>
+        <div class="set7"><h6>Romms avalibile</h6></div>
+        <div class="set8"><h6>Divices setup</h6></div>
+        <div class="set9"><h6>Reading resources</h6></div>
+        <!--main container close-->
+        <!--index cont start-->
+        <div class="set10">
+          <h1>70 <sup>&dollar;</sup></h1>
+          <h2>__________</h2>
+          <h6 class="dollar">Start from&dollar;70 for <br />one person</h6>
+          <h6 class="mon">Per month</h6>
+        </div>
+      </div>
+    </div>
+    <!--index cont close-->
+    <!--footer start-->
+    <div class="container3">
+      <div class="subcontainer3">
+        <div class="foot1"><h2>Rooms & Facilities</h2></div>
+        <div class="footer1">
+          <h4 class="space">Space <br />for events</h4>
+          <h6 class="space2">Learn more +</h6>
+          <img src="task_4_img/plan.png" alt="" class="space3" />
+        </div>
+        <div class="footer2">
+          <h4 class="chill">
+            Chill <br />
+            out zone
+          </h4>
+          <h6 class="chill2">Learn more +</h6>
+          <img src="task_4_img/plan.png" alt="" class="chill3" />
+        </div>
+        <div class="footer3">
+          <h4 class="virt">virtual <br />office setup</h4>
+          <h6 class="virt2">Learn more +</h6>
+          <img src="task_4_img/plan.png" alt="" class="virt3" />
+        </div>
+      </div>
+    </div>
+    <!--footer close-->
+  </body>
+</html>

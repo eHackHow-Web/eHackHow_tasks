@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *,
+      *::after,
+      *::before {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+      }
+      .Wrapper {
+        height: 100vh;
+        width: 100vw;
+      }
+      .container {
+        max-width: 81rem;
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        position: relative;
+      }
+      span {
+        color: white;
+        font-size: 50px;
+        position: absolute;
+        top: 26%;
+        right: 25%;
+        letter-spacing: 2rem;
+        text-shadow: 10px 10px 20px #fff;
+      }
+      .buttons button {
+        width: 120px;
+        height: 70px;
+        border: #fff;
+        margin: 3rem;
+        font-weight: 700;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+      .one {
+        background-color: #64ffff;
+        box-shadow: 1px 1px 20px #64ffff;
+      }
+      .two {
+        background-color: #9595df;
+        box-shadow: 1px 1px 20px #9595df;
+      }
+      .three {
+        background-color: #e28c8c;
+        box-shadow: 1px 1px 20px #e28c8c;
+      }
+      .four {
+        background-color: #53cc59;
+        box-shadow: 1px 1px 20px #25c11d;
+        font-size: large;
+      }
+      #five {
+        display: none;
+      }
+      img {
+        width: 900px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="buttons">
+          <span>CLICK HERE</span>
+          <hr />
+          <button class="one" onclick="char()">CHAR TO ASCII</button>
+          <button class="two" onclick="num()">NUM TO ASCII</button>
+          <button class="three" onclick="table()">ASKII TABLE</button>
+          <button class="four" onclick="close()">x</button>
+          <div id="five">
+            <img src="task_12_img/ask.jpg" alt="as" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function char() {
+        let a = prompt("Enter char");
+        let b = a.charCodeAt();
+        alert(b);
+      }
+      function num() {
+        let a, c;
+        c = prompt("Enter number");
+        a = String.fromCharCode(`${c}`);
+        alert(a, "<br />");
+      }
+      function table() {
+        document.getElementById("five").style.display = "block";
+      }
+      function close() {
+        document.getElementById("five").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+    *,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  font-family: "poppins", sans-serif;
+  background-color: #fff;
+}
+.wrapper .container {
+  display: flex;
+  max-width: 81rem;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .container .card {
+  width: 20rem;
+  height: 30rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 2rem 6rem;
+  filter: drop-shadow(3px 3px 5px black);
+  background: -webkit-linear-gradient(#2d12b5, #ab127a);
+  -webkit-background-clip: content-box;
+  -webkit-text-fill-color: #fff;
+}
+.wrapper .container .card #fig{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.wrapper .container .card img {
+  width: 40%;
+  border: #a5127c 9px solid;
+  border-radius: 50%;
+}
+.wrapper .container .card h3 {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem 2rem;
+  font-size: 1.5rem;
+}
+.wrapper .container .card #main {
+  font-size: x-small;
+  background-color: #2d12b5;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem 1rem;
+}
+.wrapper .container .card #icon i {
+  margin: 1rem;
+  font-size: xx-large;
+}
+
+.wrapper .container .card #btn #btn1 ,#btn2 {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  font-weight: 700;
+  border: 2px solid black;
+  border-radius: 1rem 2rem;
+  background-color: #2d12b5;
+}
+
+  </style>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="card">
+          <div id="fig"></div>
+          <h3 id="nam"></h3>
+          <span id="main"> </span>
+          <div id="icon"></div>
+          <div id="btn">
+            <button id="btn1"></button><button id="btn2"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script >
+      let info = [
+  {
+    photo: `<img src="task_14_img/abhi.jpg" alt="abhi">`,
+    name: "PROGRAMMER",
+    subtitle:
+      "MY NAME IS ABHISHEK AVINASH PAWAR I AM <br />STUDYING IN BSC-IT 2ND YEAR IN KBP COLLAGE",
+    icon: `
+    <i id="i_1" class="fa-brands fa-facebook"></i>
+    <i id="i_2" class="fa-brands fab fa-whatsapp"></i>
+    <i id="i_3" class="fa-brands fa-instagram"></i> `,
+    low1: "FOLLOW",
+    low2: "MESSAGE",
+  },
+];
+
+let imh = document.getElementById("fig");
+imh.innerHTML = info[0].photo;
+let start = document.getElementById("nam");
+start.innerHTML = info[0].name;
+let sec = document.getElementById("main");
+sec.innerHTML = info[0].subtitle;
+let bio = document.getElementById("icon");
+bio.innerHTML = info[0].icon;
+let but = document.getElementById("btn1");
+but.innerHTML = info[0].low1;
+let last = document.getElementById("btn2");
+last.innerHTML = info[0].low2;
+
+    </script>
+  </body>
+</html>

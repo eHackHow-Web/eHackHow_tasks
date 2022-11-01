@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+    /*google font*/
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+    *,
+    *::after,
+    *::before {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    /*global css*/
+    body {
+      font-family: "poppins", sans-serif;
+      user-select: none;
+    }
+
+    li {
+      margin: 1.5rem;
+      list-style: none;
+      padding: 0.5rem;
+      border-radius: 10px;
+    }
+    label {
+      padding-left: 2rem;
+      cursor: pointer;
+      color: aliceblue;
+    }
+    /*main section*/
+    .main_section {
+      width: 100%;
+      min-height: 100vh;
+      background-color: #401d9e;
+    }
+    .container {
+      display: flex;
+      width: 100%;
+      max-width: 81rem;
+      min-height: 100vh;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+    }
+    .function input[type="radio"] {
+      display: none;
+    }
+    .box_1 {
+      border-radius: 10px;
+      padding-right: 7.9rem;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+    }
+    .box_2 {
+      border-radius: 10px;
+      padding-right: 7.5rem;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+    }
+    .box_3 {
+      border-radius: 10px;
+      padding-right: 5rem;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+    }
+    .box_4 {
+      border-radius: 10px;
+      padding-right: 6.6rem;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+    }
+    .box_5 {
+      border-radius: 10px;
+      padding-right: 6.4rem;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+    }
+    /*main section end*/
+    /*check section*/
+    input#Home:checked ~ .box_1,
+    input#Explore:checked ~ .box_2,
+    input#Notifications:checked ~ .box_3,
+    input#Message:checked ~ .box_4,
+    input#Bookmark:checked ~ .box_5 {
+      background-color: white;
+      color: black;
+    }
+  </style>
+  <body>
+    <div class="main_section">
+      <div class="container">
+        <div class="function">
+          <ul>
+            <li>
+              <input type="radio" name="home" id="Home" />
+              <label for="Home" class="box_1"
+                ><i class="fa-solid fa-house-chimney"></i
+                > &nbsp;&nbsp;&nbsp;&nbsp;Home</label
+              >
+            </li>
+            <li>
+              <input type="radio" name="home" id="Explore" />
+              <label for="Explore" class="box_2">
+                <i class="fa-regular fa-compass"></i
+                >&nbsp;&nbsp;&nbsp;&nbsp;Explore</label
+              >
+            </li>
+            <li>
+              <input type="radio" name="home" id="Notifications" />
+              <label for="Notifications" class="box_3">
+                <i class="fa-regular fa-bell"></i
+                >&nbsp;&nbsp;&nbsp;&nbsp;Notifications</label
+              >
+            </li>
+            <li>
+              <input type="radio" name="home" id="Message" />
+              <label for="Message" class="box_4"
+                ><i class="fa-regular fa-envelope"></i
+                >&nbsp;&nbsp;&nbsp;&nbsp;Message</label
+              >
+            </li>
+            <li>
+              <input type="radio" name="home" id="Bookmark" />
+              <label for="Bookmark" class="box_5"
+                ><i class="fa-regular fa-bookmark"></i
+                >&nbsp;&nbsp;&nbsp;&nbsp;bookmark</label
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

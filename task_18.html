@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    *,
+    ::after,
+    ::before {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: sans-serif;
+    }
+    button {
+      background-color: #5555e9;
+      padding: 1rem 2rem;
+      border: none;
+      color: aliceblue;
+      font-weight: 600;
+      border-radius: 10px;
+      filter: drop-shadow(3px 3px 8px black);
+    }
+    h1 {
+      border: black 1px solid;
+      padding: 0.5rem 2rem;
+      background-color: #3ec53c;
+      filter: drop-shadow(3px 3px 8px black);
+      border-radius: 20px;
+    }
+    li{
+      background-color: #10130b;
+      padding: 0.5rem 2rem;
+      border-radius: 10px;
+      margin: 0.3rem;
+    }
+    .wrapper {
+      width: 100vw;
+      min-height: 100vh;
+      background-size: contain;
+      background-color: #1cb4b4;
+    }
+    .wrapper .container {
+      width: 100%;
+      max-width: 81rem;
+      min-height: 100vh;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .btn_section {
+      flex-flow: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      color: aliceblue;
+    }
+    .rule{
+      background-color: #c10e0e;
+    }
+  .mydiv
+  {
+    display: none;
+  }
+  </style>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="btn_section">
+          <h1>Are you interested in playing quiz ?</h1>
+          <button onclick="openq()">QUIZ OPEN</button>
+          <button onclick="closeq()">QUIZ CLOSE</button>
+          <button onclick="readq()">PREPARE THIS</button>
+          <button class="rule" onclick="rio()">RULES AND REGULATIONS</button>
+          <ol class="mydiv">
+            <li>first click start button otherwise you cannot attempt questions</li>
+            <li>He gives the 30 seconds for 6 questions</li>
+            <li>If you choose right answer hi blinking green light</li>
+            <li>if you choose wrong answer he blinking red light</li>
+            <li>Per question only one attempt then cannot try</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <script>
+      function openq() {
+        window.open("./quiz.html");
+      }
+      function closeq() {
+        window.close("./task_18.html");
+      }
+      function readq() {
+        window.open("https://codescracker.com/exam/showtest.php?subid=4");
+      }
+      function rio(){
+        let x=document.querySelector(".mydiv");
+        if(x.style.display === "none"){
+          x.style.display = "block";
+        }else{
+          x.style.display="none";
+        }
+      }
+
+
+    </script>
+  </body>
+</html>

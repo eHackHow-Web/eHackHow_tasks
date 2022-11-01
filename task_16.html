@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    *,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+img {
+  width: 12rem;
+  height: 7rem;
+  box-shadow: 1px 1px 3px 3px black;
+}
+
+button {
+  padding: 0.5rem 1rem;
+
+  font-weight: bold;
+  filter: drop-shadow(1px 1px 3px black);
+  border: none;
+}
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #cfe4e4;
+}
+.wrapper .container {
+  width: 100%;
+  min-height: 100%;
+  max-width: 81rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  min-height: 45rem;
+  width: 80%;
+}
+.card {
+  background-image: linear-gradient(#9e9ece, #f5e2e2);
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+  height: 22rem;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0.5rem;
+  filter: drop-shadow(1px 1px 3px black);
+}
+@media (max-width: 750px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 450px) {
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+  </style>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="gallery"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+    const carddata = [
+      {
+        name: "CAT",
+        fig: "task_16_img/cat.jpg",
+        desc: "Lorem ipsum, dolor sit amet con <br>adipisicing elit. Officiis, adipisci!",
+        btn: "READ MORE",
+      },
+      {
+        name: "LION",
+        fig: "task_16_img/lion.jpg",
+        desc: "Lorem ipsum, dolor sit amet cons <br>adipisicing elit. Officiis, adipisci!",
+        btn: "READ MORE",
+      },
+      {
+        name: "TIGER",
+        fig: "task_16_img/tiger.jpg",
+        desc: "Lorem ipsum, dolor sit amet con <br>adipisicing elit. Officiis, adipisci!",
+        btn: "READ MORE",
+      },
+      {
+        name: "ELEPHANT",
+        fig: "task_16_img/elephant.jpg",
+        desc: "Lorem ipsum, dolor sit amet con <br>adipisicing elit. Officiis, adipisci!",
+        btn: "READ MORE",
+      },
+      {
+        name: "DOG",
+        fig: "task_16_img/dog.jpg",
+        desc: "Lorem ipsum, dolor sit amet con <br>adipisicing elit. Officiis, adipisci!",
+        btn: "READ MORE",
+      },
+      {
+        name: "CAMEL",
+        fig: "task_16_img/camel.jpg",
+        desc: "Lorem ipsum, dolor sit amet con <br>adipisicing elit. Officiis, adipisci!",
+        btn: "READ MORE",
+      },
+    ];
+    
+    for (let i = 0; i < carddata.length; i++) {
+      let gallery = document.querySelector(".gallery");
+
+      let div = `<div class="card">
+    <img src="${carddata[i].fig}" alt="img1">
+    <h1>${carddata[i].name}</h1>
+    <p>${carddata[i].desc}</p>
+    <button>${carddata[i].btn}</button>
+    </div>`;
+      gallery.insertAdjacentHTML("beforeend", div);
+    }
+    </script>
+  </body>
+</html>

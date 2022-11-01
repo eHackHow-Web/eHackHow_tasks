@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    *,
+    *::after,
+    *::before {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      max-width: 100vw;
+      width: 100%;
+      min-height: 100vh;
+      background-color: #e7cccc;
+      font-family: "poppins", sans-serif;
+      cursor: pointer;
+      user-select: none;
+      position: relative;
+    }
+    table {
+      height: 40rem;
+      width: 50rem;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    tr {
+      background-color: #7878b1;
+      height: 3rem;
+    }
+    td {
+      text-align: center;
+      border: 1px thin red;
+      padding: 1rem;
+    }
+    h2 {
+      color: #7878b1;
+      position: absolute;
+      left: 50%;
+      top: 13%;
+      transform: translate(-50%, -13%);
+      text-decoration: underline;
+    }
+  </style>
+  <body>
+    
+    <script>
+      let a = [
+        "Index No.",
+        "Name",
+        "Marathi",
+        "Hindi",
+        "English",
+        " Physics",
+        "Chemistry",
+        "Total",
+        "Percentage",
+        "Grade",
+      ];
+      let b = ["1", "Abhi", "90", "90", "90", "90", "90", "450", "90%", "a++"];
+      let c = ["2", "Shub", "80", "80", "80", "80", "80", "400", "80%", "a+"];
+      let d = ["3", "Rohit", "70", "70", "70", "70", "70", "350", "70%", "b++"];
+      let e = ["4", "Parth", "60", "60", "60", "60", "60", "300", "60%", "b+"];
+      let f = ["5", "Vivek", "50", "50", "50", "50", "50", "250", "50%", "c++"];
+      document.write(" <table> ");
+      document.write("<tr> ");
+      for (let i = 0; i < a.length; i++) {
+        document.write(`<td> ${a[i]}</td>`);
+      }
+      document.write("</tr>");
+      document.write("<tr>");
+      for (let i = 0; i < b.length; i++) {
+        document.write(`<td> ${b[i]}</td>`);
+      }
+      document.write("</tr>");
+
+      document.write("<tr>");
+      for (let i = 0; i < c.length; i++) {
+        document.write(`<td> ${c[i]}</td>`);
+      }
+
+      document.write("</tr>");
+      document.write("<tr>");
+      for (let i = 0; i < d.length; i++) {
+        document.write(`<td> ${d[i]}</td>`);
+      }
+      document.write("</tr>");
+
+      document.write("<tr>");
+      for (let i = 0; i < e.length; i++) {
+        document.write(`<td> ${e[i]}</td>`);
+      }
+      document.write("</tr>");
+
+      document.write("<tr>");
+      for (let i = 0; i < f.length; i++) {
+        document.write(`<td> ${f[i]}</td>`);
+      }
+      document.write("</tr>");
+      document.write("</table>");
+      
+    </script>
+  </body>
+</html>

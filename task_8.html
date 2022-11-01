@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main_section {
+  max-width: 81rem;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  background: url(task_8_img/backk.jpg) no-repeat;
+  background-size: cover;
+  font-family: "poppins", sans-serif;
+  background-blend-mode: multiply;
+}
+.container {
+  width: 100%;
+  height: 46.6rem;
+  position: relative;
+}
+/*NAVBAR START*/
+.navbar_section {
+  display: flex;
+  justify-content: space-between;
+  height: 6rem;
+  align-items: center;
+  color: white;
+  margin-right: 7rem;
+  margin-left: 7rem;
+}
+.navbar_section h3 {
+  font-size: large;
+}
+.navbar_section ul {
+  list-style: none;
+}
+.navbar_section input[type="radio"] {
+  display: none;
+}
+.navbar_section label {
+  margin: 1rem;
+  padding: 0.6rem 2rem 0.6rem 2rem;
+}
+input#about:checked ~ .lab1,
+input#docs:checked ~ .lab2,
+input#login:checked ~ .lab3 {
+  background-color: #eb908d;
+}
+/*NAVBAR END*/
+
+/*ARGUMENT START*/
+.argument_section h1 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  position: absolute;
+  top: 30%;
+  left: 8%;
+}
+.argument_section .argument_sub .box_1,
+.box_2,
+.box_3 {
+  display: flex;
+  font-size: x-large;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 8%;
+  top: 54%;
+}
+
+.argument_section .argument_sub .box_2 {
+  left: 23%;
+  top: 54%;
+}
+.argument_section .argument_sub .box_3 {
+  left: 38%;
+  top: 54%;
+}
+.argument_sub .first,
+.second,
+.third {
+  font-size: x-small;
+  color: #fff;
+  position: absolute;
+  left: 90px;
+  top: 15px;
+}
+.argument_sub .f_1,
+.f_2,
+.f_3 {
+  color: #fff;
+  position: absolute;
+  left: 90px;
+  top: 35px;
+}
+
+/*ARGUMENT END*/
+/*footer start*/
+.footer_section {
+  width: 92%;
+  height: 10rem;
+  background-color: #334654;
+  position: absolute;
+  top: 78.4%;
+  left: 8%;
+  opacity: 0.9;
+  color: #fff;
+}
+.footer_section .boy {
+  width: 150px;
+  height: 80px;
+  position: absolute;
+  top: 29%;
+  left: 5%;
+}
+.footer_section .girl {
+  width: 150px;
+  height: 80px;
+  position: absolute;
+  left: 40%;
+  top: 29%;
+}
+.footer_section .foot1 {
+  position: absolute;
+  left: 20%;
+  top: 35%;
+}
+.footer_section .fot1 {
+  position: absolute;
+  left: 20%;
+  top: 55%;
+}
+.footer_section .foot2 {
+  position: absolute;
+  left: 55%;
+  top: 35%;
+}
+.footer_section .fot2 {
+  position: absolute;
+  left: 55%;
+  top: 55%;
+}
+.footer_section h2 {
+  font-size: small;
+  position: absolute;
+  left: 79%;
+  top: 35%;
+}
+
+/*footer end*/
+
+  </style>
+  <body>
+    <div class="main_section">
+      <div class="container">
+        <div class="navbar_section">
+          <h3>Travley</h3>
+          <ul>
+            <input type="radio" name="nav" id="about"/>
+            <label for="about" class="lab1">About</label>
+            <input type="radio" name="nav" id="docs" />
+            <label for="docs" class="lab2">Docs</label>
+            <input type="radio" name="nav" id="login" />
+            <label for="login" class="lab3">Login</label>
+          </ul>
+        </div>
+        <div class="argument_section">
+          <h1>
+            Real-time intineraries <br />
+            powerd by location AI
+          </h1>
+          <div class="argument_sub">
+            <div class="box_1">
+              <i class="fa-solid fa-location-dot"></i>
+              <h6 class="first">Popular</h6>
+              <h6 class="f_1">Cities</h6>
+            </div>
+            <div class="box_2">
+              <i class="fa-solid fa-user-check"></i>
+              <h6 class="second">Local</h6>
+              <h6 class="f_2">Insights</h6>
+            </div>
+            <div class="box_3">
+              <i class="fa-solid fa-file"></i>
+              <h6 class="third">Amazing</h6>
+              <h6 class="f_3">Guides</h6>
+            </div>
+          </div>
+        </div>
+        <div class="footer_section">
+          <img class="girl" src="task_8_img/girl.jpg" alt="" />
+          <h5 class="foot1">HUNDRES OF GUIDE</h5>
+          <h6 class="fot1">New high quality guides <br />added each weak .</h6>
+          <img class="boy" src="task_8_img/boy.jpg" alt="" />
+          <h5 class="foot2">VETTED LOCAL EXPERT</h5>
+          <h6 class="fot2">
+            The laegest netwrok of <br />
+            local guides worldwide
+          </h6>
+          <h2>LEARN MORE</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

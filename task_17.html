@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    *,
+    ::after,
+    ::before {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    li {
+      background-color: #fff;
+      margin: 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      list-style: none;
+    }
+    button {
+      padding: 1rem;
+      background-color: #2fdf6e;
+      font-weight: 800;
+      margin: 1rem;
+      border-radius: 1rem;
+      filter: drop-shadow(1px 1px 3px #fff);
+    }
+    .btn_1 {
+      padding: 1rem 1.7rem;
+    }
+    .btn_2 {
+      background-color: red;
+      color: #fff;
+    }
+    .wrapper {
+      width: 100%;
+      min-height: 100vh;
+      font-family: sans-serif;
+      background-color: #282a36;
+    }
+    .container {
+      max-width: 81rem;
+      height: 100vh;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <ul class="list"></ul>
+        <button onclick="create()" class="btn_1">new tag click</button>
+        <button onclick="remove()" class="btn_2">remove tag click</button>
+      </div>
+    </div>
+    <script>
+      function create() {
+        let tag_name = prompt("Create li tag :");
+        if (tag_name == "li") {
+          let tag_data = prompt("enter tag data :");
+          let list = document.querySelector(".list");
+          let store_tag = document.createElement(tag_name);
+          let store_tag_data = document.createTextNode(tag_data);
+          store_tag.appendChild(store_tag_data);
+          list.appendChild(store_tag);
+        } else {
+          alert(" Error ! plz enter li tag");
+        }
+      }
+      function remove() {
+        let remove_choice = prompt("Remove choice");
+        let list = document.querySelector(".list");
+        list.removeChild(list.children[remove_choice]);
+      }
+    </script>
+  </body>
+</html>

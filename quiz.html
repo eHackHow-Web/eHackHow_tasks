@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    *,
+    ::after,
+    ::before {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: sans-serif;
+      user-select: none;
+    }
+    h4 {
+      background-color: #68b2b2;
+      padding: 0.2rem 1rem;
+      color: aliceblue;
+    }
+    button {
+      padding: 0.5rem 2rem;
+      border: none;
+      background-color: #8a8ad3;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    li {
+      padding: 0rem 3rem;
+      background-color: #68b2b2;
+      margin: 0.3rem;
+      border: black 1px solid;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .wrapper {
+      width: 100%;
+      min-height: 100vh;
+    }
+    .wrapper .container {
+      width: 100%;
+      max-width: 81rem;
+      min-height: 100vh;
+      background-color: aqua;
+      margin: 0 auto;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+    .btn_section {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .time {
+      background-color: #8a8ad3;
+      padding: 0.5rem 2rem;
+      cursor: pointer;
+    }
+    .timer {
+      background-color: red;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      display: none;
+    }
+    .q_section {
+      background-color: aquamarine;
+      width: 100%;
+      min-height: 40rem;
+      background-color: #8a8ad3;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border: 2px solid black;
+    }
+    .q_1,
+    .q_2,
+    .q_3,
+    .q_4,
+    .q_5,
+    .q_6 {
+      margin: 1rem;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-evenly;
+      align-items: center;
+      border: 2px solid black;
+    }
+    @media screen and (max-width: 768px) {
+      .q_section {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      @media screen and (max-width: 450px) {
+        .q_section {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        .btn_section {
+        display: inline;
+      }
+      }
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="btn_section">
+          <h1 class="time">Quiz box</h1>
+          <h1 class="timer">0</h1>
+          <button onclick="start()">START</button>
+        </div>
+        <div class="q_section">
+          <div class="q_1">
+            <h4>1:How to create an orderd list in HTML ?</h4>
+            <ol class="list1">
+              <li class="right">ol</li>
+              <li class="wrong1">ul</li>
+              <li class="wrong2">br</li>
+              <li class="wrong3">href</li>
+            </ol>
+          </div>
+          <div class="q_2">
+            <h4>2: We enclose HTML tags within ?</h4>
+            <ol class="list2">
+              <li class="wrong4">{}</li>
+              <li class="wrong5">!!</li>
+              <li class="right_2"><></li>
+              <li class="wrong6">None of the above</li>
+            </ol>
+          </div>
+          <div class="q_3">
+            <h4>
+              3: Which of the following tags dosent require a closing tag ?
+            </h4>
+            <ol class="list3">
+              <li class="wrong7">br</li>
+              <li class="wrong8">hr</li>
+              <li class="right_3">Both A and B</li>
+              <li class="wrong9">None of the above</li>
+            </ol>
+          </div>
+          <div class="q_4">
+            <h4>4: 1 rem = ....px ?</h4>
+            <ol class="list4">
+              <li class="wrong10">31</li>
+              <li class="wrong11">10</li>
+              <li class="right_4">16</li>
+              <li class="wrong12">4</li>
+            </ol>
+          </div>
+          <div class="q_5">
+            <h4>5: in how many ways can CSS be written in ?</h4>
+            <ol class="list5">
+              <li class="right_5">3</li>
+              <li class="wrong13">1</li>
+              <li class="wrong14">4</li>
+              <li class="wrong15">2</li>
+            </ol>
+          </div>
+          <div class="q_6">
+            <h4>6: How can we select element with a specific class in CSS ?</h4>
+            <ol class="list6">
+              <li class="right_6">.</li>
+              <li class="wrong16">#</li>
+              <li class="wrong17">*</li>
+              <li class="wrong18">:</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function start() {
+        let timer = document.querySelector(".timer");
+        timer.style.display = "block";
+
+        let a = 0;
+        window.setInterval(() => {
+          a += 1;
+          if (a == 30) {
+            window.open("./task_18.html");
+          }
+          timer.innerText = a;
+        }, 1000);
+      
+
+      let right = document.querySelector(".right");
+      let q_1 = document.querySelector(".q_1");
+      right.addEventListener("click", () => {
+        q_1.style.background = "#37ac46";
+      });
+      let right_2 = document.querySelector(".right_2");
+      let q_2 = document.querySelector(".q_2");
+      right_2.addEventListener("click", () => {
+        q_2.style.background = "#37ac46";
+      });
+      let right_3 = document.querySelector(".right_3");
+      let q_3 = document.querySelector(".q_3");
+      right_3.addEventListener("click", () => {
+        q_3.style.background = "#37ac46";
+      });
+      let right_4 = document.querySelector(".right_4");
+      let q_4 = document.querySelector(".q_4");
+      right_4.addEventListener("click", () => {
+        q_4.style.background = "#37ac46";
+      });
+      let right_5 = document.querySelector(".right_5");
+      let q_5 = document.querySelector(".q_5");
+      right_5.addEventListener("click", () => {
+        q_5.style.background = "#37ac46";
+      });
+
+      let right_6 = document.querySelector(".right_6");
+      let q_6 = document.querySelector(".q_6");
+      right_6.addEventListener("click", () => {
+        q_6.style.background = "#37ac46";
+      });
+
+      let wrong1 = document.querySelector(".wrong1");
+      let list1 = document.querySelector(".list1");
+      wrong1.addEventListener("click", () => {
+        q_1.style.background = "#e40613";
+        list1.style.display = "none";
+      });
+
+      let wrong2 = document.querySelector(".wrong2");
+      wrong2.addEventListener("click", () => {
+        q_1.style.background = "#e40613";
+        list1.style.display = "none";
+      });
+      let wrong3 = document.querySelector(".wrong3");
+      wrong3.addEventListener("click", () => {
+        q_1.style.background = "#e40613"
+        list1.style.display = "none";
+      });
+
+      let wrong4 = document.querySelector(".wrong4");
+      let list2 = document.querySelector(".list2");
+      wrong4.addEventListener("click", () => {
+        q_2.style.background = "#e40613";
+        list2.style.display = "none";
+      });
+
+      let wrong5 = document.querySelector(".wrong5");
+      wrong5.addEventListener("click", () => {
+        q_2.style.background = "#e40613";
+        list2.style.display = "none";
+      });
+      let wrong6 = document.querySelector(".wrong6");
+      wrong6.addEventListener("click", () => {
+        q_2.style.background = "#e40613";
+        list2.style.display = "none";
+      });
+
+      let wrong7 = document.querySelector(".wrong7");
+      let list3 = document.querySelector(".list3");
+      wrong7.addEventListener("click", () => {
+        q_3.style.background = "#e40613";
+        list3.style.display = "none";
+      });
+
+      let wrong8 = document.querySelector(".wrong8");
+      wrong8.addEventListener("click", () => {
+        q_3.style.background = "#e40613";
+        list3.style.display = "none";
+      });
+      let wrong9 = document.querySelector(".wrong9");
+      wrong9.addEventListener("click", () => {
+        q_3.style.background = "#e40613";
+        list3.style.display = "none";
+      });
+
+      let wrong10 = document.querySelector(".wrong10");
+      let list4 = document.querySelector(".list4");
+      wrong10.addEventListener("click", () => {
+        q_4.style.background = "#e40613";
+        list4.style.display = "none";
+      });
+
+      let wrong11 = document.querySelector(".wrong11");
+      wrong11.addEventListener("click", () => {
+        q_4.style.background = "#e40613";
+        list4.style.display = "none";
+      });
+      let wrong12 = document.querySelector(".wrong12");
+      wrong12.addEventListener("click", () => {
+        q_4.style.background = "#e40613";
+        list4.style.display = "none";
+      });
+
+      let wrong13 = document.querySelector(".wrong13");
+      let list5 = document.querySelector(".list5");
+      wrong13.addEventListener("click", () => {
+        q_5.style.background = "#e40613";
+        list5.style.display = "none";
+      });
+
+      let wrong14 = document.querySelector(".wrong14");
+      wrong14.addEventListener("click", () => {
+        q_5.style.background = "#e40613";
+        list5.style.display = "none";
+      });
+      let wrong15 = document.querySelector(".wrong15");
+      wrong15.addEventListener("click", () => {
+        q_5.style.background = "#e40613";
+        list5.style.display = "none";
+      });
+
+      let wrong16 = document.querySelector(".wrong16");
+      let list6 = document.querySelector(".list6");
+      wrong16.addEventListener("click", () => {
+        q_6.style.background = "#e40613";
+        list6.style.display = "none";
+      });
+
+      let wrong17 = document.querySelector(".wrong17");
+      wrong17.addEventListener("click", () => {
+        q_6.style.background = "#e40613";
+        list6.style.display = "none";
+      });
+
+      let wrong18 = document.querySelector(".wrong18");
+      wrong18.addEventListener("click", () => {
+        q_6.style.background = "#e40613";
+        list6.style.display = "none";
+      });}
+    </script>
+  </body>
+</html>

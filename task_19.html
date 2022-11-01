@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    *,
+    *::after,
+    *::before {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    table {
+      display: flex;
+      margin-left: 25rem;
+    }
+    td {
+      padding: 1rem 5rem;
+      background-color: #a0e2e2;
+      border-collapse: collapse;
+      display: flex;
+      flex-flow: column;
+    }
+    td:nth-child(1) {
+      color: red;
+    }
+  </style>
+  <body>
+    <table>
+      <tr>
+        <td>college names</td>
+        <td class="c1"></td>
+        <td class="c2"></td>
+      </tr>
+      <tr>
+        <td>teachers name</td>
+        <td class="t1"></td>
+        <td class="t2"></td>
+        <td class="t3"></td>
+        <td class="t4"></td>
+        <td class="t5"></td>
+      </tr>
+      <tr>
+        <td>student name</td>
+        <td class="s1"></td>
+        <td class="s2"></td>
+        <td class="s3"></td>
+        <td class="s4"></td>
+        <td class="s5"></td>
+        <td class="s6"></td>
+        <td class="s7"></td>
+        <td class="s8"></td>
+        <td class="s9"></td>
+        <td class="s10"></td>
+        <td class="s11"></td>
+        <td class="s12"></td>
+        <td class="s13"></td>
+        <td class="s14"></td>
+        <td class="s15"></td>
+        <td class="s16"></td>
+        <td class="s17"></td>
+        <td class="s18"></td>
+        <td class="s19"></td>
+        <td class="s20"></td>
+        <td class="s21"></td>
+        <td class="s22"></td>
+        <td class="s23"></td>
+        <td class="s24"></td>
+        <td class="s25"></td>
+      </tr>
+    </table>
+  </body>
+  <script>
+    const data = [
+      {
+        college_name_1: "Y.C.college",
+        college_name_2: "K.B.P.COLLEGE",
+        teacher_name_1: "r.s.p",
+        teacher_name_2: "s.s.p",
+        teacher_name_3: "j.s.p",
+        teacher_name_4: "p.s.p",
+        teacher_name_5: "t.s.p",
+        student_name_1: "abhi pawar",
+        student_name_2: "shub pawar",
+        student_name_3: "rohi pawar",
+        student_name_4: "part pawar",
+        student_name_5: "yash pawar",
+        student_name_6: "salman pawar",
+        student_name_7: "rutik pawar",
+        student_name_8: "shah pawar",
+        student_name_9: "tiger pawar",
+        student_name_10: "mahesh pawar",
+        student_name_11: "utkarsh pawar",
+        student_name_12: "harsh pawar",
+        student_name_13: "jon pawar",
+        student_name_14: "tom pawar",
+        student_name_15: "gimmy pawar",
+        student_name_16: "sam pawar",
+        student_name_17: "jos pawar",
+        student_name_18: "joe pawar",
+        student_name_19: "alex pawar",
+        student_name_20: "hales pawar",
+        student_name_21: "viraat pawar",
+        student_name_22: "hardik pawar",
+        student_name_23: "gill pawar",
+        student_name_24: "pant pawar",
+        student_name_25: "shami pawar",
+      },
+    ];
+    class Student {
+      constructor() {
+        this.college_1 = `${data[0].college_name_1}`;
+        this.college_2 = `${data[0].college_name_2}`;
+        this.teacher_1 = `${data[0].teacher_name_1}`;
+        this.teacher_2 = `${data[0].teacher_name_2}`;
+        this.teacher_3 = `${data[0].teacher_name_3}`;
+        this.teacher_4 = `${data[0].teacher_name_4}`;
+        this.teacher_5 = `${data[0].teacher_name_5}`;
+        this.student_1 = `${data[0].student_name_1}`;
+        this.student_2 = `${data[0].student_name_2}`;
+        this.student_3 = `${data[0].student_name_3}`;
+        this.student_4 = `${data[0].student_name_4}`;
+        this.student_5 = `${data[0].student_name_5}`;
+        this.student_6 = `${data[0].student_name_6}`;
+        this.student_7 = `${data[0].student_name_7}`;
+        this.student_8 = `${data[0].student_name_8}`;
+        this.student_9 = `${data[0].student_name_9}`;
+        this.student_10 = `${data[0].student_name_10}`;
+        this.student_11 = `${data[0].student_name_11}`;
+        this.student_12 = `${data[0].student_name_12}`;
+        this.student_13 = `${data[0].student_name_13}`;
+        this.student_14 = `${data[0].student_name_14}`;
+        this.student_15 = `${data[0].student_name_15}`;
+        this.student_16 = `${data[0].student_name_16}`;
+        this.student_17 = `${data[0].student_name_17}`;
+        this.student_18 = `${data[0].student_name_18}`;
+        this.student_19 = `${data[0].student_name_19}`;
+        this.student_20 = `${data[0].student_name_20}`;
+        this.student_21 = `${data[0].student_name_21}`;
+        this.student_22 = `${data[0].student_name_22}`;
+        this.student_23 = `${data[0].student_name_23}`;
+        this.student_24 = `${data[0].student_name_24}`;
+        this.student_25 = `${data[0].student_name_25}`;
+      }
+    }
+
+    let stud = new Student();
+
+    let c1 = document.querySelector(".c1");
+    c1.textContent = `${stud.college_1}`;
+
+    let c2 = document.querySelector(".c2");
+    c2.textContent = `${stud.college_2}`;
+
+    let t1 = document.querySelector(".t1");
+    t1.textContent = `${stud.teacher_1}`;
+
+    let t2 = document.querySelector(".t2");
+    t2.textContent = `${stud.teacher_2}`;
+
+    let t3 = document.querySelector(".t3");
+    t3.textContent = `${stud.teacher_3}`;
+
+    let t4 = document.querySelector(".t4");
+    t4.textContent = `${stud.teacher_4}`;
+
+    let t5 = document.querySelector(".t5");
+    t5.textContent = `${stud.teacher_5}`;
+
+    let s1 = document.querySelector(".s1");
+    s1.textContent = `${stud.student_1}`;
+
+    let s2 = document.querySelector(".s2");
+    s2.textContent = `${stud.student_2}`;
+
+    let s3 = document.querySelector(".s3");
+    s3.textContent = `${stud.student_3}`;
+
+    let s4 = document.querySelector(".s4");
+    s4.textContent = `${stud.student_4}`;
+
+    let s5 = document.querySelector(".s5");
+    s5.textContent = `${stud.student_5}`;
+
+    let s6 = document.querySelector(".s6");
+    s6.textContent = `${stud.student_6}`;
+    let s7 = document.querySelector(".s7");
+    s7.textContent = `${stud.student_7}`;
+
+    let s8 = document.querySelector(".s8");
+    s8.textContent = `${stud.student_8}`;
+
+    let s9 = document.querySelector(".s9");
+    s9.textContent = `${stud.student_9}`;
+
+    let s10 = document.querySelector(".s10");
+    s10.textContent = `${stud.student_10}`;
+
+    let s11 = document.querySelector(".s11");
+    s11.textContent = `${stud.student_11}`;
+
+    let s12 = document.querySelector(".s12");
+    s12.textContent = `${stud.student_12}`;
+
+    let s13 = document.querySelector(".s13");
+    s13.textContent = `${stud.student_13}`;
+
+    let s14 = document.querySelector(".s14");
+    s14.textContent = `${stud.student_14}`;
+
+    let s15 = document.querySelector(".s15");
+    s15.textContent = `${stud.student_15}`;
+
+    let s16 = document.querySelector(".s16");
+    s16.textContent = `${stud.student_16}`;
+
+    let s17 = document.querySelector(".s17");
+    s17.textContent = `${stud.student_17}`;
+
+    let s18 = document.querySelector(".s18");
+    s18.textContent = `${stud.student_18}`;
+
+    let s19 = document.querySelector(".s19");
+    s19.textContent = `${stud.student_19}`;
+
+    let s20 = document.querySelector(".s20");
+    s20.textContent = `${stud.student_20}`;
+
+    let s21 = document.querySelector(".s21");
+    s21.textContent = `${stud.student_21}`;
+
+    let s22 = document.querySelector(".s22");
+    s22.textContent = `${stud.student_22}`;
+
+    let s23 = document.querySelector(".s23");
+    s23.textContent = `${stud.student_23}`;
+
+    let s24 = document.querySelector(".s24");
+    s24.textContent = `${stud.student_24}`;
+
+    let s25 = document.querySelector(".s25");
+    s25.textContent = `${stud.student_25}`;
+  </script>
+</html>
